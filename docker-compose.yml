@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: resumekeyword_container
+    environment:
+      - TZ=Asia/Seoul
+    volumes:
+      - .:/app
+    ports:
+      - "5100:5100"
