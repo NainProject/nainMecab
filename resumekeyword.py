@@ -185,8 +185,8 @@ def job_keyword_analysis():
 # 스케줄러 설정 - 매달 1일 오전 9시 40분에 실행
 # schedule.every().month.at("09:40").do(job_keyword_analysis)
 
-# 스케줄러 테스트 - 매주 월요일 오후 6시에 실행
-schedule.every().monday.at("18:00").do(job_keyword_analysis)
+# 스케줄러 테스트 - 매일 3시에 실행
+schedule.every().day.at("15:00").do(job_keyword_analysis)
 
 while True:
     schedule.run_pending()

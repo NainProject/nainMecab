@@ -5,8 +5,8 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # 필요한 패키지를 설치합니다.
-COPY setting.txt .
-RUN pip install --no-cache-dir -r setting.txt
+COPY settings.txt .
+RUN pip install --no-cache-dir -r settings.txt
 
 # 애플리케이션 소스를 복사합니다.
 COPY . .
